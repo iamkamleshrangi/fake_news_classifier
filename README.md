@@ -54,7 +54,7 @@ Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL & ML pipeline that cleans data.
-    - `python classifier.py `
+    - `python model/classifier.py `
     - The will result in output will be a classifier.
     - You may need good machine to run the process.
 
