@@ -7,6 +7,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import re
 import nltk
 from sklearn.metrics import confusion_matrix
+import numpy as np
+from joblib import dump, load
+
 nltk.download('stopwords')
 nltk.download('wordnet')
 
@@ -54,8 +57,6 @@ X_test_counts = vect.transform(X_test)
 X_test_tfidf = tfidf.transform(X_test_counts)
 y_pred = clf.predict(X_test_tfidf)
 
-import numpy as np
-
 labels = np.unique(y_pred)
 confusion_mat = confusion_matrix(y_test, y_pred, labels=labels)
 accuracy = (y_pred == y_test).mean()
@@ -64,4 +65,5 @@ print("Labels:", labels)
 print("Confusion Matrix:\n", confusion_mat)
 print("Accuracy:", accuracy)
 
+dump(clf, 'classifier.joblib')
 
