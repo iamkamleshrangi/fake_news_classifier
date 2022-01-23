@@ -8,8 +8,7 @@
 	2. [File Structure](#file_structure)
 	3. [Installing](#installation)
 	4. [Instructions](#instructions)
-	5. [Deployment!](#production)
-4. [Screenshots](#screenshots)
+	
 4. [Acknowledgement](#acknowledgement)
 5. [License](#license)
 
@@ -38,4 +37,32 @@ Projects includes
 * Machine Learning libraries: Scikit-Learn
 * Natural Language Processing libraries: NLTK
 
-#### TODO
+<a name="installation"></a>
+### Installing
+* Clone the repository.
+    ```
+    git clone git@github.com:iamkamleshrangi/fake_news_classifier.git
+    ```
+* Proper conda/virtualenv enviroment ready with python3+.
+* Install the necessary libraries provided in requirements.txt file.
+* Follow the instructions provided in the next section.
+
+<a name="instructions"></a>
+#### Instructions
+
+Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL & ML pipeline that cleans data and stores in database
+        `python classifier.py `
+    - The will result in output will be a classifier.
+    - You may need good machine to run the process.
+
+
+<a name="acknowledgements"></a>
+## Acknowledgements
+* [Kaggle](https://Kaggle.com/) for proposing idea and data set for the 
+
+<a name="license"></a>
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
